@@ -2350,6 +2350,35 @@ input, select, textarea {
 				line-height: 1em;
 			}
 
+		.icon.minor {
+			text-decoration: none;
+			color: #555;
+			cursor: default;
+			display: inline-block;
+			margin: 0 0 1em 0;
+			text-align: center;
+			width: 100%;
+		}
+
+		.icon.minor:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon.minor:before {
+			font-size: 2em;
+			line-height: 1em;
+			
+		}
+
 /* Image */
 
 	.image {
@@ -2392,6 +2421,18 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+			}
+		
+		.image.crop {
+			display: block;
+			margin: 0 0 2em 0;
+			height: 100%;
+			max-height: 200px;
+			overflow: hidden;
+		}
+
+			.image.crop img {
+				height: 100%;
 			}
 
 /* List */
@@ -2825,10 +2866,20 @@ input, select, textarea {
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
-			background-attachment: fixed,							fixed;
+			/* background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
-			background-size: auto,							cover;
+			background-size: auto,							cover; */
 		}
+			.main.style2 p {
+				font-size: 12pt;
+				line-height: 16pt;
+			}
+
+			.main.style2 h3 {
+				font-size: 1.2em;
+				line-height: 1.35em;
+				text-align: center;
+			}
 
 			.main.style2 a {
 				border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -3006,7 +3057,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			margin: 0;
+			margin: 1em;
 		}
 
 		#header p {
@@ -3038,6 +3089,7 @@ input, select, textarea {
 			}
 
 		#header .inner {
+			/* width: 50%; */
 			-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
 			-webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
 			-ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
@@ -3053,6 +3105,7 @@ input, select, textarea {
 			opacity: 1;
 			position: relative;
 			z-index: 1;
+			/* float: right; */
 		}
 
 			#header .inner .actions {
@@ -3085,6 +3138,16 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+
+	#resume {
+		color: black;
+		background-image: url("../../images/231203_Website_Front_Page.jpg");
+		background-size: cover;
+		/* position: relative; */
+		text-align: right;
+		min-height: 600px;
+		box-sizing: border-box;
+	}
 
 	body.is-preload #header .inner {
 		-moz-transform: scale(1.05);
@@ -3323,7 +3386,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 8em 3em 8em 3em ;
+				padding: 2em 3em 8em 3em ;
 			}
 
 		/* Footer */
